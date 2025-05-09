@@ -1,0 +1,9 @@
+{
+  "type": "content",
+  "modid": "mosasauridae",
+  "name": "Legacy of the Phanerozoic: Ocean Tyrant",
+  "authors": [ "laughinggas" ],
+  "description": "Adds severals Mosasaurids to Vintage Story",
+  "version": "1.0.1",
+  "side": "Universal"
+}

@@ -1,0 +1,85 @@
+﻿{
+  "code": "creature",
+  "class": "ItemCreature",
+  "maxstacksize": 64,
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [ 
+		"mosasauridae-mosasaurus-adult-male","mosasauridae-mosasaurus-adult-female", "mosasauridae-mosasaurus-baby-male", "mosasauridae-mosasaurus-baby-female",
+		"mosasauridae-tylosaurus-adult-male","mosasauridae-tylosaurus-adult-female", "mosasauridae-tylosaurus-baby-male", "mosasauridae-tylosaurus-baby-female",
+		"mosasauridae-plotosaurus-adult-male","mosasauridae-plotosaurus-adult-female", "mosasauridae-plotosaurus-baby-male", "mosasauridae-plotosaurus-baby-female",
+		"mosasauridae-thalassotitan-adult-male","mosasauridae-thalassotitan-adult-female", "mosasauridae-thalassotitan-baby-male", "mosasauridae-thalassotitan-baby-female",
+		"mosasauridae-prognathodon-adult-male","mosasauridae-prognathodon-adult-female", "mosasauridae-prognathodon-baby-male", "mosasauridae-prognathodon-baby-female",
+		"mosasauridae-moanasaurus-adult-male","mosasauridae-moanasaurus-adult-female", "mosasauridae-moanasaurus-baby-male", "mosasauridae-moanasaurus-baby-female",
+		"mosasauridae-kaikaifilu-adult-male","mosasauridae-kaikaifilu-adult-female", "mosasauridae-kaikaifilu-baby-male", "mosasauridae-kaikaifilu-baby-female",
+		"mosasauridae-taniwhasaurus-adult-male","mosasauridae-taniwhasaurus-adult-female", "mosasauridae-taniwhasaurus-baby-male", "mosasauridae-taniwhasaurus-baby-female",
+		"mosasauridae-platecarpus-adult-male","mosasauridae-platecarpus-adult-female", "mosasauridae-platecarpus-baby-male", "mosasauridae-platecarpus-baby-female",
+		"mosasauridae-globidens-adult-male","mosasauridae-globidens-adult-female", "mosasauridae-globidens-baby-male", "mosasauridae-globidens-baby-female",
+	  ]
+    }
+  ],
+	"shapeByType": {
+			"*-mosasaurus-adult-*": {"base": "entity/water/mosasauridae/mosasaurus/adult"}, "*-mosasaurus-baby-*": {"base": "entity/water/mosasauridae/mosasaurus/baby"},
+			"*-tylosaurus-adult-*": {"base": "entity/water/mosasauridae/tylosaurus/adult"}, "*-tylosaurus-baby-*": {"base": "entity/water/mosasauridae/tylosaurus/baby"},
+			"*-plotosaurus-adult-*": {"base": "entity/water/mosasauridae/plotosaurus/adult"}, "*-plotosaurus-baby-*": {"base": "entity/water/mosasauridae/plotosaurus/baby"},
+			"*-thalassotitan-adult-*": {"base": "entity/water/mosasauridae/thalassotitan/adult"}, "*-thalassotitan-baby-*": {"base": "entity/water/mosasauridae/thalassotitan/baby"},
+			"*-prognathodon-adult-*": {"base": "entity/water/mosasauridae/prognathodon/adult"}, "*-prognathodon-baby-*": {"base": "entity/water/mosasauridae/prognathodon/baby"},
+			"*-moanasaurus-adult-*": {"base": "entity/water/mosasauridae/moanasaurus/adult"}, "*-moanasaurus-baby-*": {"base": "entity/water/mosasauridae/moanasaurus/baby"},
+			"*-kaikaifilu-adult-*": {"base": "entity/water/mosasauridae/kaikaifilu/adult"}, "*-kaikaifilu-baby-*": {"base": "entity/water/mosasauridae/kaikaifilu/baby"},
+			"*-taniwhasaurus-adult-*": {"base": "entity/water/mosasauridae/taniwhasaurus/adult"}, "*-taniwhasaurus-baby-*": {"base": "entity/water/mosasauridae/taniwhasaurus/baby"},
+			"*-platecarpus-adult-*": {"base": "entity/water/mosasauridae/platecarpus/adult"}, "*-platecarpus-baby-*": {"base": "entity/water/mosasauridae/platecarpus/baby"},
+			"*-globidens-adult-*": {"base": "entity/water/mosasauridae/globidens/adult"}, "*-globidens-baby-*": {"base": "entity/water/mosasauridae/globidens/baby"},
+		},
+	"textureByType": {
+			"*-mosasaurus-adult-*":{"base": "entity/mosasaurus-adult"},"*-mosasaurus-baby-*":{"base": "entity/mosasaurus-adult"},
+			"*-tylosaurus-adult-*":{"base": "entity/tylosaurus-adult"},"*-tylosaurus-baby-*":{"base": "entity/tylosaurus-adult"},
+			"*-plotosaurus-adult-*":{"base": "entity/plotosaurus-adult"},"*-plotosaurus-baby-*":{"base": "entity/plotosaurus-adult"},
+			"*-thalassotitan-adult-*":{"base": "entity/thalassotitan-adult"},"*-thalassotitan-baby-*":{"base": "entity/thalassotitan-adult"},
+			"*-prognathodon-adult-*":{"base": "entity/prognathodon-adult"},"*-prognathodon-baby-*":{"base": "entity/prognathodon-adult"},
+			"*-moanasaurus-adult-*":{"base": "entity/moanasaurus-adult"},"*-moanasaurus-baby-*":{"base": "entity/moanasaurus-adult"},
+			"*-kaikaifilu-adult-*":{"base": "entity/kaikaifilu-adult"},"*-kaikaifilu-baby-*":{"base": "entity/kaikaifilu-adult"},
+			"*-taniwhasaurus-adult-*":{"base": "entity/taniwhasaurus-adult"},"*-taniwhasaurus-baby-*":{"base": "entity/taniwhasaurus-adult"},
+			"*-platecarpus-adult-*":{"base": "entity/platecarpus-adult"},"*-platecarpus-baby-*":{"base": "entity/platecarpus-adult"},
+			"*-globidens-adult-*":{"base": "entity/globidens-adult"},"*-globidens-baby-*":{"base": "entity/globidens-adult"},
+	},
+  "creativeinventory": { "general": ["*"], "items": ["*"], "creatures": ["*"] },
+	"materialDensity": 600,
+	"guiTransformByType": {
+		"*-baby-*": {
+			"rotate": true,
+			"translation": { "x": -20, "y": -15, "z": 0 },
+			"rotation": { "x": -11, "y": -52, "z": -180 },
+			"origin": { "x": 1.5, "y": 1.5, "z": 1.5 },
+			"scale": 0.7
+		},
+		"creature-mosasauridae-*": {
+			"rotate": true,
+			"translation": { "x": -16, "y": 0, "z": -5 },
+			"rotation": { "x": -11, "y": -52, "z": -180 },
+			"origin": { "x": 1.5, "y": 1.5, "z": 1.5 },
+			"scale": 0.3
+		},
+	},
+
+	"tpHandTransformByType": {
+		"*-baby-*": {
+			"translation": { "x": -0.51, "y": -0.2, "z": -0.7 },
+			"rotation": { "x": 53, "y": -165, "z": 77 },
+			"origin": { "x": 0, "y": 0, "z": 0 },
+			"scale": 0.25
+		},
+		"creature-mosasauridae-*": {
+			"translation": { "x": -2.5, "y": -4.6, "z": -2.4 },
+			"rotation": { "x": 2, "y": -180, "z": 23 },
+			"scale": 0.15
+		},
+	},
+
+	"fpHandTransformByType": {
+		"creature-mosasauridae-*": {
+			"translation": { "x": 0.2, "y": 0, "z": 0 },
+			"rotation": { "x": -8, "y": -63, "z": -7 }
+		}
+	}
+}

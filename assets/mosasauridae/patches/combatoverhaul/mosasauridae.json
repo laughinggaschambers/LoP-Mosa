@@ -1,0 +1,72 @@
+[
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "mosasauridae:entities/land/mosasauridae",
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityColliders",
+      "elements": {
+        "Torso": ["Neck","Neck2","Torso","Body","Body Back","Tail","Tail2","Tail3","Tail4","Tail Fin Bottom","Tail Fin Top",],
+        "Head": ["Head","Head13","Head2","Head3","Head4","Head8","Jaw Lower","Jaw Lower2","Jaw Lower3", ],
+        "Arm": ["Front Flip L","Front Flip R","Front Flip L2","Front Flip R2","Front Flip L3","Front Flip R3",],
+        "Leg": ["Back Flip L","Back Flip R","Back Flip L2","Back Flip R2","Back Flip L3","Back Flip R3",],
+        "Critical": ["EyeL","EyeR","Heart","Lungs"],
+        "Resistant": []
+      }
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "mosasauridae:entities/land/mosasauridae",
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityColliders",
+      "elements": {
+        "Torso": ["Neck","Neck2","Torso","Body","Body Back","Tail","Tail2","Tail3","Tail4","Tail Fin Bottom","Tail Fin Top",],
+        "Head": ["Head","Head13","Head2","Head3","Head4","Head8","Jaw Lower","Jaw Lower2","Jaw Lower3", ],
+        "Arm": ["Front Flip L","Front Flip R","Front Flip L2","Front Flip R2","Front Flip L3","Front Flip R3",],
+        "Leg": ["Back Flip L","Back Flip R","Back Flip L2","Back Flip R2","Back Flip L3","Back Flip R3",],
+        "Critical": ["EyeL","EyeR","Heart","Lungs"],
+        "Resistant": []
+      }
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "mosasauridae:entities/land/mosasauridae",
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityDamageModel",
+      "damageModel": {
+        "TorsoDamageMultiplier": 1,
+        "LimbsDamageMultiplier": 0.75,
+        "HeadDamageMultiplier": 2.5,
+        "CriticalDamageMultiplier": 5,
+        "DefaultResists": {"BluntAttack": 8, "SlashingAttack": 6, "PiercingAttack": 0}
+      }
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "mosasauridae:entities/land/mosasauridae",
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "CombatOverhaul:EntityDamageModel",
+      "damageModel": {
+        "TorsoDamageMultiplier": 1,
+        "LimbsDamageMultiplier": 0.75,
+        "HeadDamageMultiplier": 1.5,
+        "CriticalDamageMultiplier": 5,
+        "DefaultResists": {"BluntAttack": 8, "SlashingAttack": 6, "PiercingAttack": 0}
+      }
+    }
+  }
+]

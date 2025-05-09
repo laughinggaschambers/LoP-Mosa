@@ -1,0 +1,163 @@
+[
+ {
+    "file": "mosasauridae:entities/land/mosasauridae.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*-mosasaurus-*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+
+          "pacific neotropic",
+          "atlantic neotropic",
+
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific palearctic",
+
+          "atlantic afrotropic",
+          "eastern afrotropic",
+
+          "australasian",
+          "oceania"
+
+        ]
+      },
+
+      "*-tylosaurus-*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+        ]
+      },
+
+      "*-plotosaurus-*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+
+        ]
+      },
+
+      "*-thalassotitan-*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "eastern afrotropic",
+        ]
+      },
+
+      "*-prognathodon-*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+
+          "pacific neotropic",
+          "atlantic neotropic",
+
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific palearctic",
+
+          "atlantic afrotropic",
+          "eastern afrotropic",
+
+          "australasian",
+          "oceania"
+
+        ]
+      },
+
+      "*-moanasaurus-*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+
+          "pacific neotropic",
+          "atlantic neotropic",
+
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific palearctic",
+
+          "atlantic afrotropic",
+          "eastern afrotropic",
+
+          "australasian",
+          "oceania"
+
+        ]
+      },
+
+      "*-kaikaifilu-*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+
+          "pacific neotropic",
+          "atlantic neotropic",
+
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific palearctic",
+
+          "atlantic afrotropic",
+          "eastern afrotropic",
+
+          "australasian",
+          "oceania"
+
+        ]
+      },
+
+      "*-taniwhasaurus-*": {
+        "biorealm": [
+          "australasian",
+          "oceania"
+
+        ]
+      },
+
+      "*-platecarpus-*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+          "atlantic palearctic",
+        ]
+      },
+
+      "*-globidens-*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+
+          "pacific neotropic",
+          "atlantic neotropic",
+
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific palearctic",
+
+          "atlantic afrotropic",
+          "eastern afrotropic",
+
+          "australasian",
+          "oceania"
+
+        ]
+      },
+
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+]
