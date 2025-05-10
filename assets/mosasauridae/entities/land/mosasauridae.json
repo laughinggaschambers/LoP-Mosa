@@ -1,6 +1,6 @@
 {
     "code": "mosasauridae",
-    "class": "EntityAgent",
+    "class": "EntityFish",
 	"variantgroups": [
         {"code": "type","states": ["mosasaurus", "tylosaurus", "plotosaurus", "thalassotitan", "prognathodon", "moanasaurus", "kaikaifilu", "taniwhasaurus", "platecarpus", "globidens"]},
         {"code": "age","states": [ "adult","baby"]},
@@ -331,7 +331,7 @@
             {"code": "leap","animation": "Leap","animationSpeed": 1.2,"weight": 10,"blendMode": "AddAverage"},
             {"code": "flop","animation": "Flopping","animationSpeed": 1.0},
 			{"code": "hurt","animation": "Hurt","animationSpeed": 2.2,"weight": 10,"blendMode": "AddAverage"},
-			{"code": "die","animation": "Dead","weight": 10,"blendMode": "Average","triggeredBy": { "onControls": [ "dead" ] }},
+			{"code": "die","animation": "Dead-Floating","weight": 10,"blendMode": "Average","triggeredBy": { "onControls": [ "dead" ] }},
 			{"code": "idle","animation": "Idle","blendMode": "AddAverage","easeOutSpeed": 4,"animationSpeed": 1,"triggeredBy": { "defaultAnim": true }},
 			{"code": "sleep","animation": "Idle","easeInSpeed": 4,"easeOutSpeed": 4,"animationSpeed": 0.1,"blendMode": "Average"},
 			{"code": "eat","animation": "Eat","easeInSpeed": 4,"easeOutSpeed": 4,"blendMode": "AddAverage"},
@@ -537,11 +537,11 @@
                         "maxcooldown": 1000,
                         "minDistByType": {
 							"*-baby-*":1,
-							"*-adult-*": 12,
+							"*-adult-*": 5,
 							},
                         "minVerDistByType": {
 							"*-baby-*":1,
-							"*-adult-*": 7,
+							"*-adult-*": 3,
 							},
                         "attackAngleRangeDeg": 180,
                         "attackDurationMs": 1250,
@@ -576,16 +576,17 @@
 						"seekingRange": 40,
 						"belowTempSeekingRange": 60,
 						"movespeedByType": {
-							"*-baby-*":0.06,
-							"*-adult-*":0.075,
+							"*-baby-*":0.05,
+							"*-adult-*":0.065,
 						},
 						"animationSpeedByType": {
-							"*-baby-*":2.5,
-							"*-adult-*":2,
+							"*-baby-*":2,
+							"*-adult-*":1.5,
 						},
 						"leapAtTargetByType":{
 							"*":true,
                         },
+                        "leapChance":0.95,
 						"leapAnimation":"Leap",
 
 					},
@@ -617,12 +618,12 @@
 						"seekingRange": 60,
 						"belowTempSeekingRange": 30,
 						"movespeedByType": {
-							"*-baby-*":0.06,
-							"*-adult-*":0.075,
+							"*-baby-*":0.05,
+							"*-adult-*":0.065,
 						},
 						"animationSpeedByType": {
-							"*-baby-*":2.5,
-							"*-adult-*":2,
+							"*-baby-*":2,
+							"*-adult-*":1.5,
 						},
 						"leapAtTargetByType":{
 							"*":true,
@@ -697,12 +698,12 @@
 
                         "seekingRange": 5,
                         "movespeedByType": {
-							"*-baby-*":0.06,
-							"*-adult-*":0.075,
+							"*-baby-*":0.05,
+							"*-adult-*":0.065,
 						},
 						"animationSpeedByType": {
-							"*-baby-*":2.5,
-							"*-adult-*":2,
+							"*-baby-*":2,
+							"*-adult-*":1.5,
 						},
 						"whenInEmotionState":"fleeondamage",
 
@@ -731,12 +732,12 @@
                         "priorityByType": {"*-adult-*":0,"*-baby-*":1.8,},
                         "seekingRange": 25,
                         "movespeedByType": {
-							"*-baby-*":0.06,
-							"*-adult-*":0.075,
+							"*-baby-*":0.05,
+							"*-adult-*":0.065,
 						},
 						"animationSpeedByType": {
-							"*-baby-*":2.5,
-							"*-adult-*":2,
+							"*-baby-*":2,
+							"*-adult-*":1.5,
 						},
                     },
 					{
@@ -766,15 +767,14 @@
 						"animation": "Swimfast",
 						"priority": 1.4,
 						"entityCodeByType": {
-							"*-adult-*": "mosasauridae-{type}-baby-{gender}",
-							"*-baby-*": "mosasauridae-{type}-adult-female"},
+							"*-baby-*": "mosasauridae-{type}-adult-{gender}"},
 						"movespeedByType": {
-							"*-baby-*":0.06,
-							"*-adult-*":0.075,
+							"*-baby-*":0.05,
+							"*-adult-*":0.065,
 						},
 						"animationSpeedByType": {
-							"*-baby-*":2.5,
-							"*-adult-*":2,
+							"*-baby-*":2,
+							"*-adult-*":1.5,
 						},
 						"maxDistance": 12,
 						"searchRange": 30,
@@ -788,12 +788,12 @@
 						"seekingRange": 100,
 						"belowTempSeekingRange": 50,
 						"movespeedByType": {
-							"*-baby-*":0.06,
-							"*-adult-*":0.075,
+							"*-baby-*":0.05,
+							"*-adult-*":0.065,
 						},
 						"animationSpeedByType": {
-							"*-baby-*":2.5,
-							"*-adult-*":2,
+							"*-baby-*":2,
+							"*-adult-*":1.5,
 						},
 						"leapAtTargetByType":{
 							"*-baby-*":false,
@@ -812,12 +812,12 @@
 						"seekingRange": 30,
 						"belowTempSeekingRange": 15,
 						"movespeedByType": {
-							"*-baby-*":0.06,
-							"*-adult-*":0.075,
+							"*-baby-*":0.05,
+							"*-adult-*":0.065,
 						},
 						"animationSpeedByType": {
-							"*-baby-*":2.5,
-							"*-adult-*":2,
+							"*-baby-*":2,
+							"*-adult-*":1.5,
 						},
 						"leapAtTargetByType":{
 							"*-baby-*":false,
