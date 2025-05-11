@@ -8,20 +8,20 @@
     ],
     "fallDamageMultiplierByType": { "*-baby-*" :1,"*-adult-*" :15},
     "hitBoxSizeByType": {
-			"*-mosasaurus-adult-*": {"x": 2.5,"y": 2.5}, "*-mosasaurus-baby-*": {"x": 1.2,"y": 1.2},
-			"*-tylosaurus-adult-*": {"x": 2.2,"y": 2.2}, "*-tylosaurus-baby-*": {"x": 1.1,"y": 1.1},
-			"*-plotosaurus-adult-*": {"x": 1.9,"y": 1.9}, "*-plotosaurus-baby-*": {"x": 1.0,"y": 1.0},
-			"*-thalassotitan-adult-*": {"x": 1.8,"y": 1.8}, "*-thalassotitan-baby-*": {"x": 0.9,"y": 0.9},
-			"*-prognathodon-adult-*": {"x": 1.8,"y": 1.8}, "*-prognathodon-baby-*": {"x": 0.9,"y": 0.9},
-			"*-moanasaurus-adult-*": {"x": 1.6,"y": 1.6}, "*-moanasaurus-baby-*": {"x": 0.8,"y": 0.8},
-			"*-kaikaifilu-adult-*": {"x": 1.6,"y": 1.6}, "*-kaikaifilu-baby-*": {"x": 0.8,"y": 0.8},
+			"*-mosasaurus-adult-*": {"x": 2,"y": 1.5}, "*-mosasaurus-baby-*": {"x": 1.2,"y": 1},
+			"*-tylosaurus-adult-*": {"x": 2,"y": 1.4}, "*-tylosaurus-baby-*": {"x": 1.1,"y": 1},
+			"*-plotosaurus-adult-*": {"x": 1.9,"y": 1.2}, "*-plotosaurus-baby-*": {"x": 1.0,"y": 1.0},
+			"*-thalassotitan-adult-*": {"x": 1.8,"y": 1.2}, "*-thalassotitan-baby-*": {"x": 0.9,"y": 0.9},
+			"*-prognathodon-adult-*": {"x": 1.8,"y": 1.2}, "*-prognathodon-baby-*": {"x": 0.9,"y": 0.9},
+			"*-moanasaurus-adult-*": {"x": 1.6,"y": 1.2}, "*-moanasaurus-baby-*": {"x": 0.8,"y": 0.8},
+			"*-kaikaifilu-adult-*": {"x": 1.6,"y": 1.2}, "*-kaikaifilu-baby-*": {"x": 0.8,"y": 0.8},
 			"*-taniwhasaurus-adult-*": {"x": 1.1,"y": 1.1}, "*-taniwhasaurus-baby-*": {"x": 0.6,"y": 0.6},
 			"*-platecarpus-adult-*": {"x": 1.1,"y": 1.1}, "*-platecarpus-baby-*": {"x": 0.6,"y": 0.6},
 			"*-globidens-adult-*": {"x": 1.0,"y": 1.0}, "*-globidens-baby-*": {"x": 0.5,"y": 0.5},
 		},
 
     "deadhitBoxSizeByType": {"*-adult-*":{	"x": 2,"y": 2},"*-baby-*":{	"x": 1,"y": 1}},
-    "eyeHeightByType": {"*":1.5},
+    "eyeHeightByType": {"*":1.0},
     "weightByType": {"*-adult-*":4000,"*-baby-*":10},
     "knockbackResistanceByType": {"*-adult-*": 1,"*-baby-*": 0	},
 
@@ -329,7 +329,7 @@
         "animations": [
             {"code": "attack","animation": "Attack","animationSpeed": 1.2,"weight": 10,"blendMode": "AddAverage"},
             {"code": "leap","animation": "Leap","animationSpeed": 1.2,"weight": 10,"blendMode": "AddAverage"},
-            {"code": "flop","animation": "Flopping","animationSpeed": 1.0},
+            {"code": "flopping","animation": "Flopping","animationSpeed": 1.0},
 			{"code": "hurt","animation": "Hurt","animationSpeed": 2.2,"weight": 10,"blendMode": "AddAverage"},
 			{"code": "die","animation": "Dead-Floating","weight": 10,"blendMode": "Average","triggeredBy": { "onControls": [ "dead" ] }},
 			{"code": "idle","animation": "Idle","blendMode": "AddAverage","easeOutSpeed": 4,"animationSpeed": 1,"triggeredBy": { "defaultAnim": true }},
@@ -827,6 +827,14 @@
 							"*":true,
                         },
 						"leapAnimation":"Leap",
+					},
+					{
+						"code": "fishoutofwater",
+						"priority": 2,
+						"priorityForCancel": 2,
+						"movespeed": 0.04,
+						"animation": "flopping",
+						"animationSpeed": 2.5
 					},
 
 				]
