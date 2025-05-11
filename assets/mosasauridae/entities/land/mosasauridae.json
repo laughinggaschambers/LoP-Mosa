@@ -537,7 +537,16 @@
                         "maxcooldown": 1000,
                         "minDistByType": {
 							"*-baby-*":1,
-							"*-adult-*": 5,
+							"*-mosasaurus-*":5,
+							"*-tylosaurus-*":5,
+							"*-plotosaurus-*":5,
+							"*-thalassotitan-*":5,
+							"*-prognathodon-*":5,
+							"*-moanasaurus-*":4,
+							"*-kaikaifilu-*":4,
+							"*-taniwhasaurus-*":3,
+							"*-platecarpus-*":3,
+							"*-globidens-*":3,
 							},
                         "minVerDistByType": {
 							"*-baby-*":1,
@@ -850,7 +859,7 @@
 			"maxQuantityByGroup": { "code": "mosasauridae-*", "maxQuantity": 2 },
 			"triesPerChunk": { "avg": 0.003, "var": 0},
 			"tryOnlySurface": true,
-			"insideBlockCodes": [ "game:water-*"],
+			"insideBlockCodes": [ "game:water-*","game:saltwater-*"],
 			"groupSizeByType": {
 				"*-adult-male":{ "dist": "uniform","avg": 2,"var": 3},
 				"*-adult-female":{ "dist": "uniform","avg": 3,"var": 4},
@@ -872,7 +881,7 @@
 			"maxLightLevel": 7,
 			"lightLevelType": "onlyBlockLight",
 			"spawnCapPlayerScaling": 0.0,
-			"insideBlockCodes": [ "game:water-*"],
+			"insideBlockCodes": [ "game:water-*","game:saltwater-*"],
 			"groupSizeByType": {
 				"*-adult-male":{ "dist": "uniform","avg": 3,"var": 3},
 				"*-adult-female":{ "dist": "uniform","avg": 4,"var": 3},

@@ -2,7 +2,7 @@
   "version": 2,
   "patches": {
     "float": {
-      "spinosauridae:entities/land/spinosauridae.json": {
+      "mosasauridae:entities/land/mosasauridae.json": {
          "/server/behaviors/10/drops/0/quantityByType/*-mosasaurus-adult-*/avg": "value * drop_multiplier",
           "/server/behaviors/10/drops/0/quantityByType/*-mosasaurus-adult-*/var": "value * drop_multiplier",
           "/server/behaviors/10/drops/0/quantityByType/*-mosasaurus-baby-*/avg": "value * drop_multiplier",
