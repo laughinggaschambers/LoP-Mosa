@@ -26,7 +26,7 @@
     "knockbackResistanceByType": {"*-adult-*": 1,"*-baby-*": 0	},
 
     "drops": [],
-    "habitat": "sea",
+    "habitat": "Sea",
     "attributes": {
 		"tamedByType": {"*": false },
 		"killedByInfoText": "deadcreature-killed",
@@ -494,20 +494,21 @@
 				]
 			},
 			{"code": "taskai",
-				"aiCreatureType": "LandCreature",
+				"aiCreatureType": "SeaCreature",
 				"aitasks": [
 					{
                         "code": "meleeattack",
                         "animation": "Attack",
                         "entityCodesByType": {
 							"*-adult-*":
-								["player","salmon", "bass",
+								["player","salmon", "bass","bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
 
 									"lure-*","boat-*",
 
 									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*",
 
-									"cetacea-*","chelonioidea-*",
+									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
 								],
 							},
                         "priority": 1.9,
@@ -562,15 +563,15 @@
 						"code": "seekentity",
 						"animation": "Swimfast",
 						"entityCodesByType": {
-							"*-adult-*":[
-									"player","salmon", "bass",
+							"*-adult-*":["player","salmon", "bass","bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
 
 									"lure-*","boat-*",
 
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*",
 
-									"cetacea-*","chelonioidea-*",
-										],
+									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
+								],
 							"*-baby-*":[
 									"player","salmon", "bass",
 
@@ -582,8 +583,8 @@
 										],
 							},
 						"priority": 1.99,
-						"seekingRange": 40,
-						"belowTempSeekingRange": 60,
+						"seekingRange": 20,
+						"belowTempSeekingRange": 15,
 						"movespeedByType": {
 							"*-baby-*":0.05,
 							"*-adult-*":0.065,
@@ -597,6 +598,8 @@
                         },
                         "leapChance":0.95,
 						"leapAnimation":"Leap",
+						"whenNotInEmotionState": "saturated",
+						"whenSwimming":true,
 
 					},
 
@@ -604,26 +607,10 @@
 						"code": "seekentity",
 						"animation": "Swimfast",
 						"entityCodesByType": {
-							"*-adult-*":[
-									"player","salmon", "bass",
-
-									"lure-*", "boat-*",
-
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*",
-
-									"cetacea-*","chelonioidea-*",
-										],
-							"*-baby-*":[
-									"player","salmon", "bass",
-
-									"lure-*", "boat-*",
-
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*",
-
-									"cetacea-*","chelonioidea-*",
-										],
+							"*-adult-*":["player","lure-*","boat-*",],
+							"*-baby-*":["player","lure-*","boat-*",],
 							},
-						"priority": 2,
+						"priority": 1.98,
 						"seekingRange": 60,
 						"belowTempSeekingRange": 30,
 						"movespeedByType": {
@@ -637,14 +624,174 @@
 						"leapAtTargetByType":{
 							"*":true,
                         },
+                        "leapChance":0.95,
+						"leapAnimation":"Leap",
+						"whenSwimming":true,
+
+					},
+
+					{
+						"code": "seekentity",
+						"animation": "Swimfast",
+						"entityCodesByType": {
+							"*-adult-*":["player","salmon", "bass","bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
+
+									"lure-*","boat-*",
+
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*",
+
+									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
+								],
+							"*-baby-*":[
+									"player","salmon", "bass",
+
+									"lure-*", "boat-*",
+
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*",
+
+									"cetacea-*","chelonioidea-*",
+										],
+							},
+						"priority": 2,
+						"seekingRange": 20,
+						"belowTempSeekingRange": 15,
+						"movespeedByType": {
+							"*-baby-*":0.05,
+							"*-adult-*":0.065,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-adult-*":1.5,
+						},
+						"leapAtTargetByType":{
+							"*":true,
+                        },
 						"leapAnimation":"Leap",
 						"whenInEmotionState": "aggressivearoundentities|aggressiveondamage",
+						"whenSwimming":true,
+					},
+
+
+
+
+					{
+						"code": "seekentity",
+						"animation": "Flopping",
+						"entityCodesByType": {
+							"*-adult-*":["player","salmon", "bass","bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
+
+									"lure-*","boat-*",
+
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*",
+
+									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
+								],
+							"*-baby-*":[
+									"player","salmon", "bass",
+
+									"lure-*","boat-*",
+
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*",
+
+									"cetacea-*","chelonioidea-*",
+										],
+							},
+						"priority": 1.99,
+						"seekingRange": 7,
+						"belowTempSeekingRange": 5,
+						"movespeedByType": {
+							"*-baby-*":0.01,
+							"*-adult-*":0.03,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-adult-*":1.5,
+						},
+						"leapAtTargetByType":{
+							"*":true,
+                        },
+                        "leapChance":0.95,
+						"leapAnimation":"Leap",
+						"whenNotInEmotionState": "saturated",
+						"whenSwimming":false,
+
+					},
+
+					{
+						"code": "seekentity",
+						"animation": "Flopping",
+						"entityCodesByType": {
+							"*-adult-*":["player","lure-*","boat-*",],
+							"*-baby-*":["player","lure-*","boat-*",],
+							},
+						"priority": 1.98,
+						"seekingRange": 7,
+						"belowTempSeekingRange": 5,
+						"movespeedByType": {
+							"*-baby-*":0.01,
+							"*-adult-*":0.03,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-adult-*":1.5,
+						},
+						"leapAtTargetByType":{
+							"*":true,
+                        },
+                        "leapChance":0.95,
+						"leapAnimation":"Leap",
+						"whenSwimming":false,
+
+					},
+
+					{
+						"code": "seekentity",
+						"animation": "Flopping",
+						"entityCodesByType": {
+							"*-adult-*":["player","salmon", "bass","bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
+
+									"lure-*","boat-*",
+
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*",
+
+									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
+								],
+							"*-baby-*":[
+									"player","salmon", "bass",
+
+									"lure-*", "boat-*",
+
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*",
+
+									"cetacea-*","chelonioidea-*",
+										],
+							},
+						"priority": 2,
+						"seekingRange": 7,
+						"belowTempSeekingRange": 5,
+						"movespeedByType": {
+							"*-baby-*":0.01,
+							"*-adult-*":0.03,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-adult-*":1.5,
+						},
+						"leapAtTargetByType":{
+							"*":true,
+                        },
+						"leapAnimation":"Leap",
+						"whenInEmotionState": "aggressivearoundentities|aggressiveondamage",
+						"whenSwimming":false,
 					},
 
 					{
 						"code": "wander",
 						"animation": "Swim",
-						"priority": 0.5,
+						"priority": 1.5,
 						"movespeedByType": {
 							"*-baby-*":0.01,
 							"*-adult-*":0.04,
@@ -654,15 +801,9 @@
 							"*-adult-*":1,
 						},
 						"priorityForCancel": 1.35,
-						"chance": 0.0001,
-
-						"preferredLightLevel": 20,
-						"duringDayTimeFrames": [
-							{"fromHour": 18, "toHour": 19},
-						],
 						"stopOnNearbyEntityCodes": ["player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*", "boat-*",
 
-                        "ceratopsidae-*", "mosasauridae-*","ankylosauria-*","macronaria-*", "dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*",
+                        "ceratopsidae-*", "ankylosauria-*","macronaria-*", "dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*",
 
                         "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
                         "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "giraffe", "hellboar-*", "horse-*", "ostrich-*",  "tame-*",
@@ -670,6 +811,8 @@
                         ],
 						"whenNotInEmotionState": "aggressiveondamage",
 					},
+
+
 
 					{
                         "code": "idle",
@@ -703,9 +846,9 @@
                         "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
                         "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
                         ],
-                        "priorityByType": {"*-adult-*":0.8,"*-baby-*":1.8,},
+                        "priorityByType": {"*-adult-*":0.8,"*-baby-*":1.0,},
 
-                        "seekingRange": 5,
+                        "seekingRange": 30,
                         "movespeedByType": {
 							"*-baby-*":0.05,
 							"*-adult-*":0.065,
@@ -738,7 +881,7 @@
 
 						"spinosauridae-spinosaurus-adult-*", "spinosauridae-oxalaia-adult-*", "spinosauridae-suchomimus-adult-*", "spinosauridae-baryonyx-adult-*", "spinosauridae-ichthyovenator-adult-*","spinosauridae-irritator-adult-*",
                         ],
-                        "priorityByType": {"*-adult-*":0,"*-baby-*":1.8,},
+                        "priorityByType": {"*-adult-*":0,"*-baby-*":1.0,},
                         "seekingRange": 25,
                         "movespeedByType": {
 							"*-baby-*":0.05,
@@ -748,6 +891,69 @@
 							"*-baby-*":2,
 							"*-adult-*":1.5,
 						},
+                    },
+
+
+
+
+                    {
+                        "code": "fleeentity",
+                        "animation": "Flopping",
+                        "enabledByType":{"*-adult-*":true,"*-baby-*":true,},
+                        "entityCodes":["player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
+
+                        "ceratopsidae-*", "tyrannosauridae-*", "ankylosauria-*", "macronaria-*", "dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*",
+
+                        "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*",
+                        "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
+                        ],
+                        "priorityByType": {"*-adult-*":0.8,"*-baby-*":1.0,},
+
+                        "seekingRange": 30,
+                        "movespeedByType": {
+							"*-baby-*":0.01,
+							"*-adult-*":0.03,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-adult-*":1.5,
+						},
+						"whenInEmotionState":"fleeondamage",
+						"whenSwimming":false,
+
+                    },
+                    {
+                        "code": "fleeentity",
+                        "animation": "Flopping",
+                        "enabledByType":{"*-adult-*":false,"*-baby-*":true,},
+                        "entityCodes": ["player", "bear-*", "drifter-*", "hyena-*", "moose-*", "wolf-male", "wolf-female",
+
+                        "abelisauridae-*",
+
+                        "ceratopsidae-triceratops-adult-*","ceratopsidae-torosaurus-adult-*","ceratopsidae-pentaceratops-adult-*","ceratopsidae-pachyrhinosaurus-adult-*","ceratopsidae-styracosaurus-adult-*","ceratopsidae-centrosaurus-adult-*","ceratopsidae-xenoceratops-adult-*","ceratopsidae-machairoceratops-adult-*","ceratopsidae-nedoceratops-adult-*","ceratopsidae-sinoceratops-adult-*","ceratopsidae-regaliceratops-adult-*","ceratopsidae-nasutoceratops-adult-*","ceratopsidae-leptoceratops-adult-*","ceratopsidae-protoceratops-adult-*","ceratopsidae-ajkaceratops-adult-*",
+
+
+                        "ankylosauria-ankylosaurus-adult-*","ankylosauria-tarchia-adult-*","ankylosauria-euoplocephalus-adult-*","ankylosauria-edmontonia-adult-*","ankylosauria-ankylosaurus-adult-*","ankylosauria-pinacosaurus-adult-*","ankylosauria-antarctopelta-adult-*","ankylosauria-struthiosaurus-adult-*",
+
+						"tyrannosauridae-tyrannosaurus-adult-*","tyrannosauridae-tarbosaurus-adult-*","tyrannosauridae-nanuqsaurus-adult-*","tyrannosauridae-albertosaurus-adult-*","tyrannosauridae-gorgosaurus-adult-*","tyrannosauridae-alioramus-adult-*","tyrannosauridae-qianzhousaurus-adult-*","tyrannosauridae-zhuchengtyrannus-adult-*","tyrannosauridae-bistahieversor-adult-*","tyrannosauridae-thanatotheristes-adult-*","tyrannosauridae-teratophoneus-adult-*","tyrannosauridae-dynamoterror-adult-*",
+
+						"macronaria-argentinosaurus-adult-*","macronaria-patagotitan-adult-*","macronaria-dreadnoughtus-adult-*","macronaria-futalognkosaurus-adult-*","macronaria-brachiosaurus-adult-*","macronaria-giraffatitan-adult-*","macronaria-diamantinasaurus-adult-*","macronaria-europatitan-adult-*","macronaria-antarctosaurus-adult-*","macronaria-ruyangosaurus-adult-*","macronaria-camarasaurus-adult-*","macronaria-bruhathkayosaurus-adult-*","macronaria-malawisaurus-adult-*","macronaria-rapetosaurus-adult-*","macronaria-ampelosaurus-adult-*",
+
+						 "dromaeosauridae-utahraptor-adult-*","dromaeosauridae-dakotaraptor-adult-*","dromaeosauridae-achillobator-adult-*","dromaeosauridae-austroraptor-adult-*","dromaeosauridae-deinonychus-adult-*","dromaeosauridae-dromaeosaurus-adult-*","dromaeosauridae-adasaurus-adult-*","dromaeosauridae-velociraptor-adult-*","dromaeosauridae-saurornitholestes-adult-*","dromaeosauridae-atrociraptor-adult-*","dromaeosauridae-pyroraptor-adult-*","dromaeosauridae-buitreraptor-adult-*","dromaeosauridae-microraptor-adult-*","dromaeosauridae-rahonavis-adult-*",
+
+						"spinosauridae-spinosaurus-adult-*", "spinosauridae-oxalaia-adult-*", "spinosauridae-suchomimus-adult-*", "spinosauridae-baryonyx-adult-*", "spinosauridae-ichthyovenator-adult-*","spinosauridae-irritator-adult-*",
+                        ],
+                        "priorityByType": {"*-adult-*":0,"*-baby-*":1.0,},
+                        "seekingRange": 25,
+                        "movespeedByType": {
+							"*-baby-*":0.01,
+							"*-adult-*":0.03,
+						},
+						"animationSpeedByType": {
+							"*-baby-*":2,
+							"*-adult-*":1.5,
+						},
+						"whenSwimming":false,
                     },
 					{
 						"code": "seekfoodandeat",
@@ -793,7 +999,7 @@
 						"code": "seekentity",
 						"animation": "Swimfast",
 						"entityCodesByType": {"*":["lure-big"]},
-						"priority": 2,
+						"priority": 1.9,
 						"seekingRange": 100,
 						"belowTempSeekingRange": 50,
 						"movespeedByType": {
@@ -805,19 +1011,20 @@
 							"*-adult-*":1.5,
 						},
 						"leapAtTargetByType":{
-							"*-baby-*":false,
-							"*-adult-*":false,
+							"*-baby-*":true,
+							"*-adult-*":true,
                         },
                         "leapAtTargetByType":{
 							"*":true,
                         },
 						"leapAnimation":"Leap",
+						"whenSwimming":true,
 					},
 					{
 						"code": "seekentity",
 						"animation": "Swim",
 						"entityCodesByType": {"*":["lure-small"]},
-						"priority": 1.7,
+						"priority": 1.5,
 						"seekingRange": 30,
 						"belowTempSeekingRange": 15,
 						"movespeedByType": {
@@ -829,21 +1036,14 @@
 							"*-adult-*":1.5,
 						},
 						"leapAtTargetByType":{
-							"*-baby-*":false,
-							"*-adult-*":false,
+							"*-baby-*":true,
+							"*-adult-*":true,
                         },
 						"leapAtTargetByType":{
 							"*":true,
                         },
 						"leapAnimation":"Leap",
-					},
-					{
-						"code": "fishoutofwater",
-						"priority": 2,
-						"priorityForCancel": 2,
-						"movespeed": 0.04,
-						"animation": "flopping",
-						"animationSpeed": 2.5
+						"whenSwimming":true,
 					},
 
 				]
@@ -856,8 +1056,8 @@
 	"spawnconditions": {
 		"worldgen": {
 			"chanceByType": {"*-baby-*": 0.0},
-			"maxQuantityByGroup": { "code": "mosasauridae-*", "maxQuantity": 2 },
-			"triesPerChunk": { "avg": 0.003, "var": 0},
+			"maxQuantityByGroup": { "code": "mosasauridae-*", "maxQuantity": 1 },
+			"triesPerChunk": { "avg": 0.001, "var": 0},
 			"tryOnlySurface": true,
 			"insideBlockCodes": [ "game:water-*","game:saltwater-*"],
 			"groupSizeByType": {
