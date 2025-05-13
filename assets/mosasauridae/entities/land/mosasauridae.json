@@ -420,6 +420,7 @@
 							"*-taniwhasaurus-adult-*": {"avg": 3.0,"var": 0},
 							"*-platecarpus-adult-*": {"avg": 3.0,"var": 0},
 							"*-globidens-adult-*": {"avg": 2.0,"var": 0},
+							"*": {"avg": 0.0,"var": 0.0}
 						}
 					},
 					{
