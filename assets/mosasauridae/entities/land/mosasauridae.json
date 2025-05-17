@@ -1,6 +1,6 @@
 {
     "code": "mosasauridae",
-    "class": "EntityFish",
+    "class": "EntityAgent",
 	"variantgroups": [
         {"code": "type","states": ["mosasaurus", "tylosaurus", "plotosaurus", "thalassotitan", "prognathodon", "moanasaurus", "kaikaifilu", "taniwhasaurus", "platecarpus", "globidens"]},
         {"code": "age","states": [ "adult","baby"]},
