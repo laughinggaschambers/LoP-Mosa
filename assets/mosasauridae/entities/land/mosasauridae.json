@@ -792,7 +792,8 @@
 					{
 						"code": "wander",
 						"animation": "Swim",
-						"priority": 1.5,
+						"whenSwimming":true,
+						"priority": 0.5,
 						"movespeedByType": {
 							"*-baby-*":0.01,
 							"*-adult-*":0.04,
