@@ -1,0 +1,20 @@
+[
+ {
+    "file": "game:entities/water/boat.json",
+    "op": "addmerge",
+    "path": "/server/behaviors",
+    "side": "Server",
+    "value": [{"code": "health","maxhealthByType": {"*-raft-*": 30.0,"*-sailed-*":175}}],
+  },
+  {
+    "file": "game:entities/water/boat.json",
+    "op": "addmerge",
+    "path": "/drops",
+    "side": "Server",
+    "value": [{
+				"type": "item",
+				"code": "boat-{type}-{material}",
+				"quantity": { avg: 1, var: 0 }
+			}],
+  },
+]

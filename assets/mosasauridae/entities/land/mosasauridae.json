@@ -501,12 +501,12 @@
                         "code": "meleeattack",
                         "animation": "Attack",
                         "entityCodesByType": {
-							"*-adult-*":
+							"*":
 								["player","salmon", "bass","bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
 
 									"lure-*","boat-*",
 
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*","carcharodontosauridae-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*","carcharodontosauridae-*","therizinosauridae-*",
 
 									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
 									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
@@ -568,7 +568,7 @@
 
 									"lure-*","boat-*","stegosauria-*",
 
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*","carcharodontosauridae-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*","carcharodontosauridae-*","therizinosauridae-*",
 
 									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
 									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
@@ -578,7 +578,7 @@
 
 									"lure-*","boat-*",
 
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*","therizinosauridae-*",
 
 									"cetacea-*","chelonioidea-*","sirenia-*",
 										],
@@ -639,7 +639,7 @@
 
 									"lure-*","boat-*",
 
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*","carcharodontosauridae-*","stegosauria-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*","carcharodontosauridae-*","stegosauria-*","therizinosauridae-*",
 
 									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
 									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
@@ -649,7 +649,7 @@
 
 									"lure-*", "boat-*",
 
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*","therizinosauridae-*",
 
 									"cetacea-*","chelonioidea-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
 										],
@@ -684,7 +684,7 @@
 
 									"lure-*","boat-*",
 
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*","carcharodontosauridae-*","stegosauria-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*","carcharodontosauridae-*","stegosauria-*","therizinosauridae-*",
 
 									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
 									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
@@ -694,7 +694,7 @@
 
 									"lure-*","boat-*",
 
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*","therizinosauridae-*",
 
 									"cetacea-*","chelonioidea-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
 										],
@@ -755,7 +755,7 @@
 
 									"lure-*","boat-*",
 
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*","carcharodontosauridae-*","stegosauria-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*", "spinosauridae-*","carcharodontosauridae-*","stegosauria-*","therizinosauridae-*",
 
 									"cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
 									"capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
@@ -765,7 +765,7 @@
 
 									"lure-*", "boat-*",
 
-									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*",
+									"ceratopsidae-*", "tyrannosauridae-*","ankylosauria-*", "macronaria-*","dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*","therizinosauridae-*",
 
 									"cetacea-*","chelonioidea-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
 										],
@@ -805,7 +805,7 @@
 						"priorityForCancel": 1.35,
 						"stopOnNearbyEntityCodes": ["player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*", "boat-*",
 
-                        "ceratopsidae-*", "ankylosauria-*","macronaria-*", "dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*","stegosauria-*",
+                        "ceratopsidae-*", "ankylosauria-*","macronaria-*", "dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*","stegosauria-*","therizinosauridae-*",
 
                         "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
                         "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "giraffe", "hellboar-*", "horse-*", "ostrich-*",  "tame-*",
@@ -843,7 +843,7 @@
                         "enabledByType":{"*-adult-*":true,"*-baby-*":true,},
                         "entityCodes":["player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
 
-                        "ceratopsidae-*", "tyrannosauridae-*", "ankylosauria-*", "macronaria-*", "dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*",
+                        "ceratopsidae-*", "tyrannosauridae-*", "ankylosauria-*", "macronaria-*", "dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*","therizinosauridae-*",
 
                         "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
                         "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
@@ -887,6 +887,9 @@
 
 						"stegosauria-stegosaurus-adult-*","stegosauria-dacentrurus-adult-*","stegosauria-wuerhosaurus-adult-*","stegosauria-hesperosaurus-adult-*","stegosauria-tuojiangosaurus-adult-*","stegosauria-alcovasaurus-adult-*","stegosauria-miragaia-adult-*","stegosauria-isaberrysaura-adult-*","stegosauria-kentrosaurus-adult-*","stegosauria-huayangosaurus-adult-*","stegosauria-gigantspinosaurus-adult-*","stegosauria-chungkingosaurus-adult-*",
 
+						"therizinosauridae-therizinosaurus-adult-*","therizinosauridae-segnosaurus-adult-*","therizinosauridae-suzhousaurus-adult-*","therizinosauridae-nothronychus-adult-*","therizinosauridae-alxasaurus-adult-*","therizinosauridae-falcarius-adult-*","therizinosauridae-erliansaurus-adult-*","therizinosauridae-jianchangosaurus-adult-*","therizinosauridae-beipiaosaurus-adult-*","therizinosauridae-neimongosaurus-adult-*",
+
+
 
                         ],
                         "priorityByType": {"*-adult-*":0,"*-baby-*":1.0,},
@@ -910,7 +913,7 @@
                         "enabledByType":{"*-adult-*":true,"*-baby-*":true,},
                         "entityCodes":["player", "bear-*","chicken-*", "deer-*","drifter-*", "fox-*", "gazelle-*", "goat-*","hare-*","hyena-*", "moose-*", "pig-*", "raccoon-*", "sheep-*","tameddeer-*", "wolf-*",
 
-                        "ceratopsidae-*", "tyrannosauridae-*", "ankylosauria-*", "macronaria-*", "dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*",
+                        "ceratopsidae-*", "tyrannosauridae-*", "ankylosauria-*", "macronaria-*", "dromaeosauridae-*","hadrosauroidea-*","abelisauridae-*","pachycephalosauria-*","spinosauridae-*","carcharodontosauridae-*","stegosauria-*","therizinosauridae-*",
 
                         "cervidae-*", "elephantidae-*", "dinornithidae-*", "pantherinae-*", "caninae-*", "cervinae-*", "bovinae-*", "felinae-*", "rhinocerotidae-*", "machairodontinae-*", "vombatidae-*", "ursidae-*", "capreolinae-*","sirenia-*","spheniscidae-*","bigshark","moonjelly","shark","sunfish",
                         "capercaillie-*","goldenpheasant-*","pheasant-*", "wildturkey-*", "bison-*", "cockatrice-*", "direwolf-*", "faunling-*", "foal-*", "geodecrab-*", "giraffe", "golem-*", "hellboar-*", "horse-*", "ostrich-*", "scorpion-*", "spider-*", "tame-*", "toad-*", "chelonoidis-*"
@@ -954,6 +957,9 @@
 						"carcharodontosauridae-giganotosaurus-adult-*","carcharodontosauridae-carcharodontosaurus-adult-*","carcharodontosauridae-mapusaurus-adult-*","carcharodontosauridae-tyrannotitan-adult-*","carcharodontosauridae-tameryraptor-adult-*","carcharodontosauridae-veterupristisaurus-adult-*","carcharodontosauridae-ulughbegsaurus-adult-*","carcharodontosauridae-siamraptor-adult-*","carcharodontosauridae-shaochilong-adult-*","carcharodontosauridae-concavenator-adult-*","carcharodontosauridae-lusovenator-adult-*","carcharodontosauridae-lajasvenator-adult-*",
 
 						"stegosauria-stegosaurus-adult-*","stegosauria-dacentrurus-adult-*","stegosauria-wuerhosaurus-adult-*","stegosauria-hesperosaurus-adult-*","stegosauria-tuojiangosaurus-adult-*","stegosauria-alcovasaurus-adult-*","stegosauria-miragaia-adult-*","stegosauria-isaberrysaura-adult-*","stegosauria-kentrosaurus-adult-*","stegosauria-huayangosaurus-adult-*","stegosauria-gigantspinosaurus-adult-*","stegosauria-chungkingosaurus-adult-*",
+
+						"therizinosauridae-therizinosaurus-adult-*","therizinosauridae-segnosaurus-adult-*","therizinosauridae-suzhousaurus-adult-*","therizinosauridae-nothronychus-adult-*","therizinosauridae-alxasaurus-adult-*","therizinosauridae-falcarius-adult-*","therizinosauridae-erliansaurus-adult-*","therizinosauridae-jianchangosaurus-adult-*","therizinosauridae-beipiaosaurus-adult-*","therizinosauridae-neimongosaurus-adult-*",
+
 
 
                         ],

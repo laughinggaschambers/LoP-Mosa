@@ -14,7 +14,8 @@
         "Leg": ["Back Flip L","Back Flip R","Back Flip L2","Back Flip R2","Back Flip L3","Back Flip R3",],
         "Critical": ["EyeL","EyeR","Heart","Lungs"],
         "Resistant": []
-      }
+      },
+      "defaultPenetrationResistance": 7,
     }
   },
   {
@@ -32,7 +33,8 @@
         "Leg": ["Back Flip L","Back Flip R","Back Flip L2","Back Flip R2","Back Flip L3","Back Flip R3",],
         "Critical": ["EyeL","EyeR","Heart","Lungs"],
         "Resistant": []
-      }
+      },
+      "defaultPenetrationResistance": 7,
     }
   },
   {
